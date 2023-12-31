@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LainaSoobie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" class="form-control" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number-of-dogs">Number of Dogs:</label>
+                <input type="number" class="form-control" id="number-of-dogs" name="number-of-dogs" required>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" class="form-control" id="start-date" name="start-date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="end-date">End Date:</label>
+                <input type="date" class="form-control" id="end-date" name="end-date" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

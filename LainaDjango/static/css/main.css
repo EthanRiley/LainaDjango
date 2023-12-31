@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+.image-container {
+    background-color: deepskyblue;
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}

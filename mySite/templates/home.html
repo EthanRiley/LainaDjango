@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LainaSoobie</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h1>YellaDog</h1>
+                <a href="/mySite/reservations" class="btn btn-primary">Reserve Now!</a>
+            </div>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="{% static 'images/doggie.jpg' %}" class="mx-auto d-block" alt="Doggie">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
