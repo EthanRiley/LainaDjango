@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django.views.generic.base import RedirectView
 
+admin.site.site_header = "YellowDog Admin"
+admin.site.index_title = "Administration"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mySite/', include('mySite.urls')),
