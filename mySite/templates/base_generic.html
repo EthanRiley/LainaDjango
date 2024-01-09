@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,11 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
     {% block title %}
       <title>YellowDog Doggie Daycare</title>
     {% endblock %}
   </head>
   <body>
+    <div class="header">
+        <h1>YellowDog Doggie Daycare</h1>
+      </div>
     {% block sidebar %}
       <!-- insert default navigation text for every page -->
     {% endblock %}

@@ -10,9 +10,18 @@ h1 {
     font-size: 3em;
 }
 .image-container {
-    background-color: deepskyblue;
+    background-color: red;
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
     margin: 0 auto;
 }
+
+.header {
+    height: 10vh;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 20px;
+  }

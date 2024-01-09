@@ -10,3 +10,6 @@ def load_homepage(request):
 
 def load_boarding_form(request):
     return render(request, 'boarding_form.html')
+
+def base_generic(request):
+    return render(request, 'base_generic.html')
