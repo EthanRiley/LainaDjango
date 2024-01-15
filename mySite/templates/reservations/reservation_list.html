@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h2>Reservations</h2>
+    <ul>
+    {% for reservation in reservations %}
+        <li>
+            Customer: {{ reservation.customer }}<br>
+            Start Date: {{ reservation.startDate }}<br>
+            End Date: {{ reservation.endDate }}<br>
+            Number of Dogs: {{ reservation.numDogs }}
+        </li>
+    {% empty %}
+        <li>No reservations.</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

@@ -9,8 +9,13 @@ body {
 h1 {
     font-size: 3em;
 }
+
+h2 {
+    margin-top: 50px; /* adjust this value as needed */
+}
+
 .image-container {
-    background-color: red;
+    background-color: deepskyblue;
     border-radius: 20px;
     padding: 20px;
     width: fit-content;
@@ -18,10 +23,12 @@ h1 {
 }
 
 .header {
-    height: 10vh;
+    width: 100%;
+    height: 15vh;
     background-color: deepskyblue;
     display: flex;
     align-items: center;
     padding-left: 15px;
-    border-radius: 20px;
+    border-radius: 50px;
+    font-family: Georgia, serif;
   }
