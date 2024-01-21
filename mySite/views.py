@@ -20,4 +20,9 @@ def reservation_list_view(request):
     queryset = Reservation.objects.all()
     return render(request, 'reservations/reservation_list.html', {'reservations': queryset})
 
+def login_page(request):
+    return render(request, 'registration/login.html', name='login')
+
+
+
 
