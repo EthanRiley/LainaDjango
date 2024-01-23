@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.views import generic
 from .models import Reservation
@@ -23,6 +23,12 @@ def reservation_list_view(request):
 def login_page(request):
     return render(request, 'registration/login.html', name='login')
 
+def profile_view(request):
+    if request.user.is_authenticated:
+        reservations = Reservation.objects.filter(customer=request.user)
+        return render(request, 'profile.html', {'reservations': reservations, 'user': request.user})
+    else:
+        return redirect('login')
 
 
 
