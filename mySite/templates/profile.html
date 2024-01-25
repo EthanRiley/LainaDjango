@@ -4,8 +4,8 @@
     <div class="col">
         <h2>Profile</h2>
         <h2>User: {{ user }}</h2>
+        <a href="/mySite/accounts/logout/" class="btn btn-primary">Log Out</a>
         <h3>Reservations</h3>
-        {{ reservations }}
         <ul>
         {% for reservation in reservations %}
             <li>
