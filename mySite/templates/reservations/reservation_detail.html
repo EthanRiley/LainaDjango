@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h2>Reservation for {{ reservation.customer }}</h2>
+    </div>
+    <div class="col">
+        <p> From {{ reservation.startDate }} to {{ reservation.endDate }}</p>
+    </div>
+    <div class="col">
+        <ul>
+            {% for blog in blogs %}
+                <li>
+                    Title: {{ blog.title }} <br>
+                    Snippet: {{ blog.body|truncatechars:50 }}
+                </li>
+            {% empty %}
+                <li>No reservations.</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

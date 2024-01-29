@@ -12,6 +12,7 @@
                 Start Date: {{ reservation.startDate }}<br>
                 End Date: {{ reservation.endDate }}<br>
                 Number of Dogs: {{ reservation.numDogs }}
+                Reservation Page: <a href="{% url 'reservation_detail' reservation.id %}">Link</a>
             </li>
         {% empty %}
             <li>No reservations.</li>

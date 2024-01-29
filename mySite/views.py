@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.views import generic
-from .models import Reservation
+from .models import Reservation, Blog
 
 # Create your views here.
 def say_hello(request):
@@ -29,6 +29,13 @@ def profile_view(request):
         return render(request, 'profile.html', {'reservations': reservations, 'user': request.user})
     else:
         return redirect('login')
+
+def reservation_detail_view(request, reservation_id):
+    reservation = get_object_or_404(Reservation, pk=reservation_id)
+    blogs = Blog.objects.filter(reservation=reservation)
+    return render(request, 'reservations/reservation_detail.html', 
+                  {'reservation': reservation,
+                   'blogs': blogs})
 
 
 
