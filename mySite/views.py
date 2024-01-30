@@ -37,5 +37,9 @@ def reservation_detail_view(request, reservation_id):
                   {'reservation': reservation,
                    'blogs': blogs})
 
+def blog_detail_view(request, blog_id):
+    blog = get_object_or_404(Blog, pk=blog_id)
+    return render(request, 'blogs/blog_view.html', {'blog': blog})
+
 
 

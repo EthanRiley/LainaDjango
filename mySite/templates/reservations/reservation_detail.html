@@ -13,6 +13,7 @@
                 <li>
                     Title: {{ blog.title }} <br>
                     Snippet: {{ blog.body|truncatechars:50 }}
+                    Blog: <a href="{% url 'blog_detail' blog.id %}">Link</a>
                 </li>
             {% empty %}
                 <li>No reservations.</li>

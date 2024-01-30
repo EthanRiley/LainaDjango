@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="row box">
+    <div class="col">
+        <h2> {{ blog.title }} </h2>
+    </div>
+    <div class="col">
+        <p> {{blog.date}} </p>
+    </div>
+</div>
+<div class="row box">
+    <div class="col">
+        <p> {{blog.body}} </p>
+    </div>
+</div>
+{% endblock %}
